@@ -1,0 +1,4 @@
+---
+import { profile } from '../data/profile';
+---
+<section id="werkervaring" class="expertise section-pad"><div class="container"><div class="section-heading"><div><p class="eyebrow">Praktijkervaring.</p><h2>Ik kan helpen bij:</h2></div></div><ul class="expertise-grid">{profile.expertise.map(item => <li><span class="expertise-dot" aria-hidden="true"></span>{item}</li>)}</ul></div></section>

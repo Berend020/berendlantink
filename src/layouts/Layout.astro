@@ -1,0 +1,5 @@
+---
+import { profile } from '../data/profile';
+import '../styles/global.css';
+---
+<!doctype html><html lang="nl"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>{profile.title}</title><meta name="description" content={profile.description}/><link rel="canonical" href={profile.url}/><link rel="icon" type="image/svg+xml" href="/favicon.svg"/><meta property="og:type" content="website"/><meta property="og:locale" content="nl_NL"/><meta property="og:title" content={profile.title}/><meta property="og:description" content={profile.description}/><meta property="og:url" content={profile.url}/><meta property="og:image" content={`${profile.url}og-image.png`}/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image:alt" content="Berend Lantink — Payments professional, 17 jaar ervaring"/><meta name="twitter:card" content="summary_large_image"/></head><body><a href="#inhoud" class="skip-link">Ga naar de inhoud</a><slot/></body></html>

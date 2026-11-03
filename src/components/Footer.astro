@@ -1,0 +1,5 @@
+---
+import { profile } from '../data/profile';
+import LinkedInButton from './LinkedInButton.astro';
+---
+<section id="contact" class="contact container"><div><h2>Kennismaken?</h2></div><LinkedInButton /></section><footer class="container site-footer"><a class="wordmark" href="#"><span class="monogram">bl<span>.</span></span><span>{profile.domain}</span></a><p>© {new Date().getFullYear()} {profile.name}</p></footer>

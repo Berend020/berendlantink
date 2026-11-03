@@ -1,0 +1,5 @@
+---
+import { profile } from '../data/profile';
+const configured = profile.linkedinUrl.startsWith('https://www.linkedin.com/in/');
+---
+{configured ? <a class="linkedin-button" href={profile.linkedinUrl} target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2M8 19H5V9h3ZM6.5 7.7a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4M19 19h-3v-5.2c0-1.6-2-1.5-2 0V19h-3V9h3v1.2c1.4-2.6 5-1.4 5 2.5Z"/></svg>Bekijk mijn LinkedIn <span aria-hidden="true">↗</span><span class="sr-only"> (opent in een nieuw tabblad)</span></a> : <div class="linkedin-placeholder"><button class="linkedin-button" disabled><span class="linkedin-mark" aria-hidden="true">in</span>Bekijk mijn LinkedIn <span aria-hidden="true">↗</span></button></div>}
